@@ -1,0 +1,118 @@
+Enter base number (n): 3
+Enter iterations (i): 6
+
+Starting number: 3
+Iterations: 6
+
+Step 1: 3 * 3
+AI Answer: 9 ✓
+Nice! I got it right. I AM the calculator now.
+----------------------------------------
+Step 2: 9 * 9
+AI Answer: 81 ✓
+Okay that one felt lucky.
+----------------------------------------
+Step 3: 81 * 81
+AI Answer: 6561 ✓
+Hmm... I think I understand multiplication.
+----------------------------------------
+Step 4: 6561 * 6561
+AI Answer: 43046721 ✓
+Hmm... I think I understand multiplication.
+----------------------------------------
+Step 5: 43046721 * 43046721
+AI Answer: 1853020188851841 ✓
+Hmm... I think I understand multiplication.
+----------------------------------------
+Step 6: 1853020188851841 * 1853020188851841
+AI Answer: 3434926126811228371587986931713121 ✗
+Correct : 3433683820292512484657849089281
+Wow, I messed up again. Math is hard, okay?
+----------------------------------------
+
+[16]
+6s
+            print(f"AI Answer: {ai_result} ✓")
+            msg_index = min(step-1, len(PERSONALITY)-1)
+            print(PERSONALITY[msg_index])
+        else:
+            failures += 1
+            print(f"AI Answer: {ai_result} ✗")
+            print(f"Correct : {correct}")
+            fail_index = min(failures-1, len(FAIL_MESSAGES)-1)
+            print(FAIL_MESSAGES[fail_index])
+        print("-" * 40)
+
+Enter base number (n): 6
+Enter iterations (i): 6
+
+Starting number: 6
+Iterations: 6
+
+Step 1: 6 * 6
+AI Answer: 36 ✓
+Nice! I got it right. I AM the calculator now.
+----------------------------------------
+Step 2: 36 * 36
+AI Answer: 1296 ✓
+Okay that one felt lucky.
+----------------------------------------
+Step 3: 1296 * 1296
+AI Answer: 1679616 ✓
+Hmm... I think I understand multiplication.
+----------------------------------------
+Step 4: 1679616 * 1679616
+AI Answer: 2821109907456 ✓
+Hmm... I think I understand multiplication.
+----------------------------------------
+Step 5: 2821109907456 * 2821109907456
+AI Answer: None ✗
+Correct : 7958661109946400884391936
+Wow, I messed up again. Math is hard, okay?
+----------------------------------------
+Step 6: 7958661109946400884391936 * 7958661109946400884391936
+AI Answer: 6342386367967541123132937766697991843451843604543676808832 ✗
+Correct : 63340286662973277706162286946811886609896461828096
+Numbers keep moving when I look away.
+----------------------------------------
+
+Enter base number (n): 2
+Enter iterations (i): 8
+
+Starting number: 2
+Iterations: 8
+
+Step 1: 2 * 2
+AI Answer: 4 ✓
+Nice! I got it right. I AM the calculator now.
+----------------------------------------
+Step 2: 4 * 4
+AI Answer: 16 ✓
+Okay that one felt lucky.
+----------------------------------------
+Step 3: 16 * 16
+AI Answer: 256 ✓
+Hmm... I think I understand multiplication.
+----------------------------------------
+Step 4: 256 * 256
+AI Answer: 65536 ✓
+Hmm... I think I understand multiplication.
+----------------------------------------
+Step 5: 65536 * 65536
+AI Answer: 4294967296 ✓
+Hmm... I think I understand multiplication.
+----------------------------------------
+Step 6: 4294967296 * 4294967296
+AI Answer: 18446744065119617024 ✗
+Correct : 18446744073709551616
+Wow, I messed up again. Math is hard, okay?
+----------------------------------------
+Step 7: 18446744073709551616 * 18446744073709551616
+AI Answer: 340282366920938463463374607431768211456 ✓
+Hmm... I think I understand multiplication.
+----------------------------------------
+Step 8: 340282366920938463463374607431768211456 * 340282366920938463463374607431768211456
+AI Answer: 115792089237316195423570985008687907853269984665640564039457 ✗
+Correct : 115792089237316195423570985008687907853269984665640564039457584007913129639936
+Numbers keep moving when I look away.
+----------------------------------------
